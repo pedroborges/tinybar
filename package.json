@@ -1,0 +1,23 @@
+{
+  "name": "tinybar",
+  "version": "0.0.1",
+  "description": "Tiny progress bar",
+  "author": "Pedro Borges <oi@pedroborg.es> (https://pedroborg.es)",
+  "license": "MIT",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.js",
+  "unpkg": "dist/index.umd.js",
+  "module": "dist/index.m.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "devDependencies": {
+    "microbundle": "^0.11.0"
+  },
+  "files": [
+    "src",
+    "dist"
+  ]
+}
