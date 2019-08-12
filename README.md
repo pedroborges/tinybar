@@ -1,6 +1,6 @@
 # Tinybar
 
-Tiny progress bar (~340 bytes gzipped).
+Tiny progress bar (~337 bytes gzipped).
 
 ## Installation
 
@@ -40,18 +40,22 @@ Now, just add your own CSS:
 #my-progress-bar {
   background: #e2e8f0;
   height: 2px;
+
+  /* (!) Be careful when editing the properties below */
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
-  transition: height .3s ease-in;
+  transition: height .3s;
   width: 100%;
-  z-index: 9999;
+  z-index: 10000;
 }
 
 /* Progress bar */
 #my-progress-bar div {
   background: #90cdf4;
+
+  /* (!) Be careful when editing the properties below */
   height: 100%;
   transition: width .2s ease-out;
   width: 0;
