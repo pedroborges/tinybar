@@ -1,6 +1,6 @@
 # Tinybar
 
-Tiny progress bar (~343 bytes gzipped).
+Tiny progress bar (~340 bytes gzipped).
 
 ## Installation
 
