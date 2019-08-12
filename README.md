@@ -1,6 +1,6 @@
 # Tinybar
 
-Tiny progress bar (~320 bytes gzipped).
+Tiny progress bar (~343 bytes gzipped).
 
 ## Installation
 
@@ -26,16 +26,34 @@ tinybar.go(30)
 tinybar.go(100)
 ```
 
-### Change bar color
+## Add Custom CSS
+Tinybar comes with some default inline styling that works out-of-the-box. You can take control of the styling by passing an `id` when instantiating Tinybar.
+
+```js
+const tinybar = new Tinybar('my-progress-bar')
+```
+
+Now, just add your own CSS:
 
 ```css
 /* Wrapper div element */
-.tinybar {
-  background: #fff !important;
+#my-progress-bar {
+  background: #e2e8f0;
+  height: 2px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: height .3s ease-in;
+  width: 100%;
+  z-index: 9999;
 }
 
 /* Progress bar */
-.tinybar div {
-  background: #48bb78 !important;
+#my-progress-bar div {
+  background: #90cdf4;
+  height: 100%;
+  transition: width .2s ease-out;
+  width: 0;
 }
 ```
